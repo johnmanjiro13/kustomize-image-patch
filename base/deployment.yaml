@@ -1,11 +1,7 @@
-# kustomize-image-patch
-
-```
-$ kustomize build app
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  creationTimestamp: null
   labels:
     app: nginx
   name: nginx
@@ -17,12 +13,12 @@ spec:
   strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.0
+      - image: nginx
         name: nginx
         resources: {}
 status: {}
-```
