@@ -4,4 +4,8 @@ resources:
   - ../base
 patchesStrategicMerge:
   - deployment.yaml
-  - image.yaml
+
+images:
+  - name: nginx-image
+    newName: nginx
+    newTag: 1.21.0
