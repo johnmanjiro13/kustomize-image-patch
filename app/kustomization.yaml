@@ -8,4 +8,4 @@ patchesStrategicMerge:
 images:
   - name: nginx-image
     newName: johnmanjiro13/gitops-app
-    newTag: 1.21.0
+    newTag: release-hogehoge
